@@ -4,7 +4,7 @@ body {
   margin: 0;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(270deg, #31211f, #4e5c57, #a04040);
+  background: linear-gradient(270deg, #31211f, #4e5c57, rgb(194, 192, 192));
   background-size: 600% 600%;
   animation: gradientFlow 16s linear infinite;
 }
