@@ -78,13 +78,14 @@ button{
      transition: all 0.3s ease;
        animation: fadeInUp 1.2s ease forwards;
        border-radius: 5px;
+       border: none;
     
 }
 
 
 button:hover{
      box-shadow: 0 0 10px rgb(243, 241, 241);
-    background-color: rgba(216, 201, 201, 0.822);
+    background-color: rgba(216, 226, 215, 0.26);
  
 }
 
@@ -123,11 +124,19 @@ li{
     background-color: rgba(2, 1, 1, 0.151); /* muda a cor da tarefa */
 }
 
+.clear {
+  margin: 15px auto 0 auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 50%;
+  text-align: center;   
+}
 
-
-@keyframes myAnimation {
-  0%   {background-color: rgb(235, 231, 231);}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
+.clear:hover {
+  background-color: rgba(241, 5, 5, 0.26);
+  box-shadow: 0 0 10px rgba(255,255,255,0.8);
 }
