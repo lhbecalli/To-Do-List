@@ -1,30 +1,61 @@
-body{
-
-    display: flex;
-    height: 100vh;
-    background-color: rgb(184, 184, 187);
-    margin: 0;
-   justify-content: center;
-   align-items: center;
-
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #31211f, #4e5c57, #a04040);
+  background-size: 600% 600%;
+  animation: gradientFlow 16s linear infinite;
 }
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 0 10px rgb(206, 40, 40);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
         width: 300px; 
     padding: 20px;
-        
+    border-radius: 10px;
+      animation: fadeInUp 1.2s ease forwards;
 }
 
 h1{
 
     text-align: center;
-    color: rgba(179, 4, 4, 0.781);
+    color: rgba(255, 255, 255, 0.781);
     margin-bottom: 5px;
      text-shadow: 0 0 10px rgb(206, 40, 40);
+     font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+   z-index: 1;
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 input{
@@ -32,6 +63,10 @@ input{
     margin: 10px 0;
     max-width: 100%;
     box-sizing: border-box;
+    outline: none;
+     transition: 0.3s;
+       animation: fadeInUp 1.2s ease forwards;
+
 }
 
 button{
@@ -40,12 +75,17 @@ button{
     padding: 10px;
      box-sizing: border-box; 
      font-size: smaller;
-
+     transition: all 0.3s ease;
+       animation: fadeInUp 1.2s ease forwards;
+       border-radius: 5px;
+    
 }
 
+
 button:hover{
-    
-    background-color: rgba(180, 31, 26, 0.822);
+     box-shadow: 0 0 10px rgb(243, 241, 241);
+    background-color: rgba(216, 201, 201, 0.822);
+ 
 }
 
 ul{ 
@@ -63,12 +103,13 @@ li{
     border: 1px solid;
     box-sizing: border-box;
     padding: 5px 5px;
-    background-color: rgba(158, 147, 146, 0.747);
+    background-color: rgba(235, 229, 228, 0.747);
+    box-shadow:0 0 10px rgb(243, 241, 241);;
 }
 
 .check, .delete{
     cursor: pointer;
-       text-shadow: 0 0 5px rgba(180, 31, 26, 0.822);
+       text-shadow: 0 0 5px rgba(253, 253, 253, 0.822);
     transition: 0.3s;
 }
 
@@ -79,5 +120,14 @@ li{
 
 .done {
     text-decoration: line-through; /* risca o texto */
-    color: rgb(190, 176, 176); /* muda a cor da tarefa */
+    background-color: rgba(2, 1, 1, 0.151); /* muda a cor da tarefa */
+}
+
+
+
+@keyframes myAnimation {
+  0%   {background-color: rgb(235, 231, 231);}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
 }
