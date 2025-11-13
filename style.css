@@ -1,0 +1,83 @@
+body{
+
+    display: flex;
+    height: 100vh;
+    background-color: rgb(184, 184, 187);
+    margin: 0;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(206, 40, 40);
+        width: 300px; 
+    padding: 20px;
+        
+}
+
+h1{
+
+    text-align: center;
+    color: rgba(179, 4, 4, 0.781);
+    margin-bottom: 5px;
+     text-shadow: 0 0 10px rgb(206, 40, 40);
+}
+
+input{
+    padding: 10px 10px;
+    margin: 10px 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+    max-width: 100%;
+    padding: 10px;
+     box-sizing: border-box; 
+     font-size: smaller;
+
+}
+
+button:hover{
+    
+    background-color: rgba(180, 31, 26, 0.822);
+}
+
+ul{ 
+    width: 100%;
+    list-style-type: none;
+   padding: 0;
+   
+}
+
+li{ 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    background-color: rgba(158, 147, 146, 0.747);
+}
+
+.check, .delete{
+    cursor: pointer;
+       text-shadow: 0 0 5px rgba(180, 31, 26, 0.822);
+    transition: 0.3s;
+}
+
+.check{
+    margin: auto;
+    margin-right: 5px;
+}
+
+.done {
+    text-decoration: line-through; /* risca o texto */
+    color: rgb(190, 176, 176); /* muda a cor da tarefa */
+}
